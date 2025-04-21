@@ -19,7 +19,7 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 @ParametersAreNonnullByDefault
 public final class StorageForge extends CraftingBlock {
 
-    public static final MachineRecipeType TYPE = new MachineRecipeType("storage_forge", Storage.STORAGE_FORGE);
+    public static final MachineRecipeType TYPE = new MachineRecipeType("storage_forge", Storage.STORAGE_FORGE.item());
 
     public StorageForge(ItemGroup category, SlimefunItemStack stack, RecipeType type, ItemStack[] recipe) {
         super(category, stack, type, recipe);

@@ -62,34 +62,34 @@ public final class Storage {
 
     public static void setup(InfinityExpansion plugin) {
         new StorageForge(Groups.STORAGE, STORAGE_FORGE, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                Materials.MAGSTEEL, new ItemStack(Material.ANVIL), Materials.MAGSTEEL,
-                Materials.MAGSTEEL, new ItemStack(Material.CRAFTING_TABLE), Materials.MAGSTEEL,
-                Materials.MAGSTEEL, new ItemStack(Material.BARREL), Materials.MAGSTEEL,
+                Materials.MAGSTEEL.item(), new ItemStack(Material.ANVIL), Materials.MAGSTEEL.item(),
+                Materials.MAGSTEEL.item(), new ItemStack(Material.CRAFTING_TABLE), Materials.MAGSTEEL.item(),
+                Materials.MAGSTEEL.item(), new ItemStack(Material.BARREL), Materials.MAGSTEEL.item(),
         }).register(plugin);
         new StorageUnit(BASIC_STORAGE, BASIC_AMOUNT, new ItemStack[] {
-                new ItemStack(Material.OAK_LOG), Materials.MAGSTEEL, new ItemStack(Material.OAK_LOG),
+                new ItemStack(Material.OAK_LOG), Materials.MAGSTEEL.item(), new ItemStack(Material.OAK_LOG),
                 new ItemStack(Material.OAK_LOG), new ItemStack(Material.BARREL), new ItemStack(Material.OAK_LOG),
-                new ItemStack(Material.OAK_LOG), Materials.MAGSTEEL, new ItemStack(Material.OAK_LOG)
+                new ItemStack(Material.OAK_LOG), Materials.MAGSTEEL.item(), new ItemStack(Material.OAK_LOG)
         }).register(plugin);
         new StorageUnit(ADVANCED_STORAGE, ADVANCED_AMOUNT, new ItemStack[] {
-                Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL,
-                Materials.MAGSTEEL, BASIC_STORAGE, Materials.MAGSTEEL,
-                Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL
+                Materials.MAGSTEEL.item(), Materials.MACHINE_CIRCUIT.item(), Materials.MAGSTEEL.item(),
+                Materials.MAGSTEEL.item(), BASIC_STORAGE.item(), Materials.MAGSTEEL.item(),
+                Materials.MAGSTEEL.item(), Materials.MACHINE_CIRCUIT.item(), Materials.MAGSTEEL.item()
         }).register(plugin);
         new StorageUnit(REINFORCED_STORAGE, REINFORCED_AMOUNT, new ItemStack[] {
-                Materials.MAGSTEEL_PLATE, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL_PLATE,
-                Materials.MAGSTEEL_PLATE, ADVANCED_STORAGE, Materials.MAGSTEEL_PLATE,
-                Materials.MAGSTEEL_PLATE, Materials.MACHINE_PLATE, Materials.MAGSTEEL_PLATE
+                Materials.MAGSTEEL_PLATE.item(), Materials.MACHINE_CIRCUIT.item(), Materials.MAGSTEEL_PLATE.item(),
+                Materials.MAGSTEEL_PLATE.item(), ADVANCED_STORAGE.item(), Materials.MAGSTEEL_PLATE.item(),
+                Materials.MAGSTEEL_PLATE.item(), Materials.MACHINE_PLATE.item(), Materials.MAGSTEEL_PLATE.item()
         }).register(plugin);
         new StorageUnit(VOID_STORAGE, VOID_AMOUNT, new ItemStack[] {
-                Materials.VOID_INGOT, Materials.MACHINE_PLATE, Materials.VOID_INGOT,
-                Materials.MAGNONIUM, REINFORCED_STORAGE, Materials.MAGNONIUM,
-                Materials.VOID_INGOT, Materials.MACHINE_CORE, Materials.VOID_INGOT
+                Materials.VOID_INGOT.item(), Materials.MACHINE_PLATE.item(), Materials.VOID_INGOT.item(),
+                Materials.MAGNONIUM.item(), REINFORCED_STORAGE.item(), Materials.MAGNONIUM.item(),
+                Materials.VOID_INGOT.item(), Materials.MACHINE_CORE.item(), Materials.VOID_INGOT.item()
         }).register(plugin);
         new StorageUnit(INFINITY_STORAGE, INFINITY_AMOUNT, new ItemStack[] {
-                Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, VOID_STORAGE, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT
+                Materials.INFINITE_INGOT.item(), Materials.VOID_INGOT.item(), Materials.INFINITE_INGOT.item(),
+                Materials.INFINITE_INGOT.item(), VOID_STORAGE.item(), Materials.INFINITE_INGOT.item(),
+                Materials.INFINITE_INGOT.item(), Materials.VOID_INGOT.item(), Materials.INFINITE_INGOT.item()
         }).register(plugin);
     }
 

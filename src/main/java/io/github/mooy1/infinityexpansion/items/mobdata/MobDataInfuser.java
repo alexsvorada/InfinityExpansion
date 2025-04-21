@@ -20,7 +20,7 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 @ParametersAreNonnullByDefault
 public final class MobDataInfuser extends CraftingBlock implements EnergyNetComponent {
 
-    static final MachineRecipeType TYPE = new MachineRecipeType("mob_data_infuser", MobData.INFUSER);
+    static final MachineRecipeType TYPE = new MachineRecipeType("mob_data_infuser", MobData.INFUSER.item());
 
     private final int energy;
 

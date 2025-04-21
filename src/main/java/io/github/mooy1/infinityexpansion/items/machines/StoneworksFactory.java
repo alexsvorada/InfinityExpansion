@@ -39,8 +39,8 @@ public final class StoneworksFactory extends AbstractMachineBlock implements Rec
     private static final int STATUS_SLOT = 9;
     private static final int[] CHOICE_SLOTS = { 11, 13, 15 };
     private static final int[] PROCESS_SLOTS = { 10, 12, 14 };
-    private static final ItemStack COBBLE_GEN = new CustomItemStack(Material.GRAY_CONCRETE, "&8Cobblegen");
-    private static final ItemStack PROCESSING = new CustomItemStack(Material.LIME_STAINED_GLASS_PANE, "&aProcessing");
+    private static final ItemStack COBBLE_GEN = CustomItemStack.create(Material.GRAY_CONCRETE, "&8Cobblegen");
+    private static final ItemStack PROCESSING = CustomItemStack.create(Material.LIME_STAINED_GLASS_PANE, "&aProcessing");
 
     public StoneworksFactory(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
@@ -191,23 +191,23 @@ public final class StoneworksFactory extends AbstractMachineBlock implements Rec
 
     @AllArgsConstructor
     private enum Choice {
-        NONE(new CustomItemStack(Material.BARRIER, "&cNone", "", "&7 > Click to cycle"),
+        NONE(CustomItemStack.create(Material.BARRIER, "&cNone", "", "&7 > Click to cycle"),
                 new Material[0],
                 new Material[0]
         ),
-        FURNACE(new CustomItemStack(Material.FURNACE, "&8Smelting", "", "&7 > Click to cycle"),
+        FURNACE(CustomItemStack.create(Material.FURNACE, "&8Smelting", "", "&7 > Click to cycle"),
                 new Material[] { Material.COBBLESTONE, Material.STONE, Material.SAND, Material.STONE_BRICKS },
                 new Material[] { Material.STONE, Material.SMOOTH_STONE, Material.GLASS, Material.CRACKED_STONE_BRICKS }
         ),
-        CRUSH(new CustomItemStack(Material.DIAMOND_PICKAXE, "&8Crushing", "", "&7 > Click to cycle"),
+        CRUSH(CustomItemStack.create(Material.DIAMOND_PICKAXE, "&8Crushing", "", "&7 > Click to cycle"),
                 new Material[] { Material.COBBLESTONE, Material.GRAVEL },
                 new Material[] { Material.GRAVEL, Material.SAND }
         ),
-        COMPACT(new CustomItemStack(Material.PISTON, "&8Compacting", "", "&7 > Click to cycle"),
+        COMPACT(CustomItemStack.create(Material.PISTON, "&8Compacting", "", "&7 > Click to cycle"),
                 new Material[] { Material.STONE, Material.GRANITE, Material.DIORITE, Material.ANDESITE, Material.SAND },
                 new Material[] { Material.STONE_BRICKS, Material.POLISHED_GRANITE, Material.POLISHED_DIORITE, Material.POLISHED_ANDESITE, Material.SANDSTONE }
         ),
-        TRANSFORM(new CustomItemStack(Material.ANDESITE, "&8Transforming", "", "&7 > Click to cycle"),
+        TRANSFORM(CustomItemStack.create(Material.ANDESITE, "&8Transforming", "", "&7 > Click to cycle"),
                 new Material[] { Material.COBBLESTONE, Material.ANDESITE, Material.DIORITE },
                 new Material[] { Material.ANDESITE, Material.DIORITE, Material.GRANITE }
         );

@@ -66,14 +66,14 @@ public final class StorageUnit extends MenuBlock implements DistinctiveItem {
     static final int INTERACT_SLOT = 22;
 
     /* Menu items */
-    private static final ItemStack INTERACTION_ITEM = new CustomItemStack(Material.LIME_STAINED_GLASS_PANE,
+    private static final ItemStack INTERACTION_ITEM = CustomItemStack.create(Material.LIME_STAINED_GLASS_PANE,
             "&aQuick Actions",
             "&bLeft Click: &7Withdraw 1 item",
             "&bRight Click: &7Withdraw 1 stack",
             "&bShift Left Click: &7Deposit inventory",
             "&bShift Right Click: &7Withdraw inventory"
     );
-    private static final ItemStack LOADING_ITEM = new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE,
+    private static final ItemStack LOADING_ITEM = CustomItemStack.create(Material.CYAN_STAINED_GLASS_PANE,
             "&bStatus",
             "&7Loading..."
     );

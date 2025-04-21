@@ -34,7 +34,7 @@ public abstract class AbstractEnergyCrafter extends TickingMenuBlock implements 
         if (blockMenu.hasViewer()) {
             int charge = getCharge(block.getLocation());
             if (charge < this.energy) { //not enough energy
-                blockMenu.replaceExistingItem(this.statusSlot, new CustomItemStack(
+                blockMenu.replaceExistingItem(this.statusSlot, CustomItemStack.create(
                         Material.RED_STAINED_GLASS_PANE,
                         "&cNot enough energy!",
                         "",

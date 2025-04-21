@@ -125,65 +125,65 @@ public final class Generators {
 
     public static void setup(InfinityExpansion plugin) {
         new InfinityReactor(Groups.INFINITY_CHEAT, INFINITY_REACTOR, InfinityWorkbench.TYPE, new ItemStack[] {
-                null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null,
-                Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.MACHINE_PLATE, SlimefunExtension.ADVANCED_NETHER_STAR_REACTOR, SlimefunExtension.ADVANCED_NETHER_STAR_REACTOR, Materials.MACHINE_PLATE, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CORE, Materials.INFINITE_CORE, Materials.INFINITE_CIRCUIT, Materials.INFINITE_INGOT
+                null, Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), null,
+                Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.VOID_INGOT.item(), Materials.VOID_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(),
+                Materials.INFINITE_INGOT.item(), Materials.MACHINE_PLATE.item(), Materials.MACHINE_PLATE.item(), Materials.MACHINE_PLATE.item(), Materials.MACHINE_PLATE.item(), Materials.INFINITE_INGOT.item(),
+                Materials.INFINITE_INGOT.item(), Materials.MACHINE_PLATE.item(), SlimefunExtension.ADVANCED_NETHER_STAR_REACTOR.item(), SlimefunExtension.ADVANCED_NETHER_STAR_REACTOR.item(), Materials.MACHINE_PLATE.item(), Materials.INFINITE_INGOT.item(),
+                Materials.INFINITE_INGOT.item(), Materials.MACHINE_PLATE.item(), Materials.MACHINE_PLATE.item(), Materials.MACHINE_PLATE.item(), Materials.MACHINE_PLATE.item(), Materials.INFINITE_INGOT.item(),
+                Materials.INFINITE_INGOT.item(), Materials.INFINITE_CIRCUIT.item(), Materials.INFINITE_CORE.item(), Materials.INFINITE_CORE.item(), Materials.INFINITE_CIRCUIT.item(), Materials.INFINITE_INGOT.item()
         }, INFINITY_REACTOR_ENERGY).register(plugin);
 
         new EnergyGenerator(Groups.BASIC_MACHINES, HYDRO, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL,
-                new ItemStack(Material.BUCKET), SlimefunItems.ELECTRO_MAGNET, new ItemStack(Material.BUCKET),
-                Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL
+                Materials.MAGSTEEL.item(), Materials.MACHINE_CIRCUIT.item(), Materials.MAGSTEEL.item(),
+                new ItemStack(Material.BUCKET), SlimefunItems.ELECTRO_MAGNET.item(), new ItemStack(Material.BUCKET),
+                Materials.MAGSTEEL.item(), Materials.MACHINE_CIRCUIT.item(), Materials.MAGSTEEL.item()
         }, HYDRO_ENERGY, GenerationType.HYDROELECTRIC).register(plugin);
         new EnergyGenerator(Groups.ADVANCED_MACHINES, REINFORCED_HYDRO, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                HYDRO, Materials.MACHINE_CIRCUIT, HYDRO,
-                Materials.MAGSTEEL_PLATE, Materials.MACHINE_CORE, Materials.MAGSTEEL_PLATE,
-                HYDRO, Materials.MACHINE_CIRCUIT, HYDRO
+                HYDRO.item(), Materials.MACHINE_CIRCUIT.item(), HYDRO.item(),
+                Materials.MAGSTEEL_PLATE.item(), Materials.MACHINE_CORE.item(), Materials.MAGSTEEL_PLATE.item(),
+                HYDRO.item(), Materials.MACHINE_CIRCUIT.item(), HYDRO.item()
         }, ADVANCED_HYDRO_ENERGY, GenerationType.HYDROELECTRIC).register(plugin);
 
         new EnergyGenerator(Groups.ADVANCED_MACHINES, GEOTHERMAL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                Materials.MAGSTEEL_PLATE, Materials.MAGSTEEL_PLATE, Materials.MAGSTEEL_PLATE,
-                SlimefunItems.LAVA_GENERATOR_2, SlimefunItems.LAVA_GENERATOR_2, SlimefunItems.LAVA_GENERATOR_2,
-                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT
+                Materials.MAGSTEEL_PLATE.item(), Materials.MAGSTEEL_PLATE.item(), Materials.MAGSTEEL_PLATE.item(),
+                SlimefunItems.LAVA_GENERATOR_2.item(), SlimefunItems.LAVA_GENERATOR_2.item(), SlimefunItems.LAVA_GENERATOR_2.item(),
+                Materials.MACHINE_CIRCUIT.item(), Materials.MACHINE_CORE.item(), Materials.MACHINE_CIRCUIT.item()
         }, GEO_ENERGY, GenerationType.GEOTHERMAL).register(plugin);
         new EnergyGenerator(Groups.ADVANCED_MACHINES, REINFORCED_GEOTHERMAL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                GEOTHERMAL, Materials.MACHINE_CIRCUIT, GEOTHERMAL,
-                Materials.MACHINE_PLATE, Materials.MACHINE_CORE, Materials.MACHINE_PLATE,
-                GEOTHERMAL, Materials.MACHINE_CIRCUIT, GEOTHERMAL
+                GEOTHERMAL.item(), Materials.MACHINE_CIRCUIT.item(), GEOTHERMAL.item(),
+                Materials.MACHINE_PLATE.item(), Materials.MACHINE_CORE.item(), Materials.MACHINE_PLATE.item(),
+                GEOTHERMAL.item(), Materials.MACHINE_CIRCUIT.item(), GEOTHERMAL.item()
         }, ADVANCED_GEO_ENERGY, GenerationType.GEOTHERMAL).register(plugin);
 
         new EnergyGenerator(Groups.BASIC_MACHINES, BASIC_PANEL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                Materials.MAGSTEEL, Materials.MAGSTEEL_PLATE, Materials.MAGSTEEL,
-                SlimefunItems.SOLAR_PANEL, SlimefunItems.SOLAR_PANEL, SlimefunItems.SOLAR_PANEL,
-                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CIRCUIT, Materials.MACHINE_CIRCUIT
+                Materials.MAGSTEEL.item(), Materials.MAGSTEEL_PLATE.item(), Materials.MAGSTEEL.item(),
+                SlimefunItems.SOLAR_PANEL.item(), SlimefunItems.SOLAR_PANEL.item(), SlimefunItems.SOLAR_PANEL.item(),
+                Materials.MACHINE_CIRCUIT.item(), Materials.MACHINE_CIRCUIT.item(), Materials.MACHINE_CIRCUIT.item()
         }, BASIC_SOLAR_ENERGY, GenerationType.SOLAR).register(plugin);
         new EnergyGenerator(Groups.ADVANCED_MACHINES, ADVANCED_PANEL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                BASIC_PANEL, BASIC_PANEL, BASIC_PANEL,
-                Materials.TITANIUM, SlimefunItems.SOLAR_GENERATOR_4, Materials.TITANIUM,
-                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CIRCUIT, Materials.MACHINE_CIRCUIT
+                BASIC_PANEL.item(), BASIC_PANEL.item(), BASIC_PANEL.item(),
+                Materials.TITANIUM.item(), SlimefunItems.SOLAR_GENERATOR_4.item(), Materials.TITANIUM.item(),
+                Materials.MACHINE_CIRCUIT.item(), Materials.MACHINE_CIRCUIT.item(), Materials.MACHINE_CIRCUIT.item()
         }, ADVANCED_SOLAR_ENERGY, GenerationType.SOLAR).register(plugin);
 
         new EnergyGenerator(Groups.ADVANCED_MACHINES, CELESTIAL_PANEL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE,
-                ADVANCED_PANEL, ADVANCED_PANEL, ADVANCED_PANEL,
-                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT
+                Materials.MACHINE_PLATE.item(), Materials.MACHINE_PLATE.item(), Materials.MACHINE_PLATE.item(),
+                ADVANCED_PANEL.item(), ADVANCED_PANEL.item(), ADVANCED_PANEL.item(),
+                Materials.MACHINE_CIRCUIT.item(), Materials.MACHINE_CORE.item(), Materials.MACHINE_CIRCUIT.item()
         }, CELESTIAL_ENERGY, GenerationType.SOLAR).register(plugin);
         new EnergyGenerator(Groups.ADVANCED_MACHINES, VOID_PANEL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
-                CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL,
-                Materials.MAGNONIUM, Materials.MAGNONIUM, Materials.MAGNONIUM
+                Materials.VOID_INGOT.item(), Materials.VOID_INGOT.item(), Materials.VOID_INGOT.item(),
+                CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(),
+                Materials.MAGNONIUM.item(), Materials.MAGNONIUM.item(), Materials.MAGNONIUM.item()
         }, VOID_ENERGY, GenerationType.LUNAR).register(plugin);
 
         new EnergyGenerator(Groups.INFINITY_CHEAT, INFINITE_PANEL, InfinityWorkbench.TYPE, new ItemStack[] {
-                CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL,
-                CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL,
-                Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CORE, Materials.INFINITE_CORE, Materials.INFINITE_CIRCUIT, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT,
-                VOID_PANEL, VOID_PANEL, VOID_PANEL, VOID_PANEL, VOID_PANEL, VOID_PANEL
+                CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(),
+                CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(), CELESTIAL_PANEL.item(),
+                Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(),
+                Materials.INFINITE_INGOT.item(), Materials.INFINITE_CIRCUIT.item(), Materials.INFINITE_CORE.item(), Materials.INFINITE_CORE.item(), Materials.INFINITE_CIRCUIT.item(), Materials.INFINITE_INGOT.item(),
+                Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(), Materials.INFINITE_INGOT.item(),
+                VOID_PANEL.item(), VOID_PANEL.item(), VOID_PANEL.item(), VOID_PANEL.item(), VOID_PANEL.item(), VOID_PANEL.item()
         }, INFINITY_ENERGY, GenerationType.INFINITY).register(plugin);
     }
 

@@ -73,7 +73,7 @@ public final class GeoQuarry extends AbstractMachineBlock implements RecipeDispl
     protected boolean process(Block b, BlockMenu inv) {
         if (InfinityExpansion.slimefunTickCount() % this.ticksPerOutput != 0) {
             if (inv.hasViewer()) {
-                inv.replaceExistingItem(STATUS, new CustomItemStack(Material.LIME_STAINED_GLASS_PANE, "&aDrilling..."));
+                inv.replaceExistingItem(STATUS, CustomItemStack.create(Material.LIME_STAINED_GLASS_PANE, "&aDrilling..."));
             }
             return true;
         }
@@ -100,7 +100,7 @@ public final class GeoQuarry extends AbstractMachineBlock implements RecipeDispl
 
         inv.pushItem(output.clone(), OUTPUT_SLOTS);
         if (inv.hasViewer()) {
-            inv.replaceExistingItem(STATUS, new CustomItemStack(Material.LIME_STAINED_GLASS_PANE, "&aFound!"));
+            inv.replaceExistingItem(STATUS, CustomItemStack.create(Material.LIME_STAINED_GLASS_PANE, "&aFound!"));
         }
         return true;
     }

@@ -50,8 +50,8 @@ public final class InfinityBow extends ExplosiveBow implements NotPlaceable, Sou
 
             target.getWorld().playEffect(target.getLocation(), Effect.STEP_SOUND, Material.ICE);
             target.getWorld().playEffect(target.getEyeLocation(), Effect.STEP_SOUND, Material.ICE);
-            target.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 20 * 2, 10));
-            target.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 20 * 2, -10));
+            target.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 20 * 2, 10));
+            target.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, 20 * 2, -10));
         };
     }
 
